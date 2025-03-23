@@ -3,16 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fetch POST Example</title>
+    <title>Submit User Data</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h2>Add a Dog</h2>
-    <form id="dogForm">
-        <label> Dog Name: <input type="text" id="dogName" required></label><br>
-        <label> Dog Breed: <input type="text" id="dogBreed" required></label><br>
+    <h1>Submit User Data</h1>
+    
+    <form id="user-form">
+        <input type="text" id="name" placeholder="Enter name" required>
+        <input type="email" id="email" placeholder="Enter email" required>
         <button type="submit">Submit</button>
     </form>
 
-    <script src="script.js"></script>
+    <h2>Response:</h2>
+    <div id="response"></div>
+
+    <script src="index.js"></script>
 </body>
 </html>
